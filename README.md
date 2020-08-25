@@ -17,4 +17,6 @@ Special syntax is
 
 Example program:
 (map (lambda (u) (+ u 1)) [1 2 3 (begin (define x 5) (define y 2) (* x (((lambda (z) (* z z)) y))))])
-will return [2 3 4 210]
+will return [2 3 4 21]
+
+In order to run you have to build dependencies using cabal build, and then run in in ghci, use method main for repl.
